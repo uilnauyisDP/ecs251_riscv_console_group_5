@@ -21,7 +21,9 @@ void showGamerOverSprite();
 int main()
 {
     writeTarget(0xFF414, 0x1);
-    initVideoSetting();
+
+    if(running_flag)
+        initVideoSetting();
 
     int x_pos = INIT_X;
     int y_pos = INIT_Y;
